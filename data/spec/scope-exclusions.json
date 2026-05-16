@@ -1,0 +1,27 @@
+{
+  "schema": "se-boundary-scope-exclusions-1",
+  "spec": {
+    "id": "CIR",
+    "name": "Civic Influence Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "excluded": [
+    "domain vocabularies beyond the CIR record profile",
+    "causation",
+    "endorsement",
+    "control",
+    "ideological agreement",
+    "coordination",
+    "wrongdoing",
+    "public influence scoring",
+    "legal or ethical judgment",
+    "recommendation or decision logic",
+    "source data hosting",
+    "automatic entity truth",
+    "source truth certification",
+    "endorsement certification",
+    "control certification",
+    "replacements for source databases or public filing systems"
+  ]
+}

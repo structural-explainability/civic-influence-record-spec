@@ -1,0 +1,106 @@
+# ============================================================
+# SE_MANIFEST.toml (Repository Declaration)
+# civic-influence-record
+# ============================================================
+
+schema = "se-manifest-schema"
+schema_url = "https://github.com/structural-explainability/se-manifest-schema/blob/main/manifest-schema.toml"
+
+# === Identity ===
+
+[meta]
+purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
+
+[repo]
+name = "civic-influence-record"
+org = "structural-explainability"
+class = "record_system"
+kind = "civic-influence-record"
+status = "active"
+since = "2026"
+summary = "Provides a civic influence accountable record system for source-backed relationships among people, organizations, money flows, roles, affiliations, policy documents, and claims."
+
+[layer]
+space = "application"
+role = "accountable-record-system"
+
+# === Dependencies ===
+
+[depends]
+required = [
+  "structural-explainability/accountable-record@main",
+]
+optional = [
+  "structural-explainability/se-verification-civic-influence-record@main",
+]
+
+# === Provided artifacts ===
+
+[provides]
+artifacts = [
+  "README.md",
+  "SPEC.md",
+  "IDENTIFIERS.md",
+  "CONFORMANCE.md",
+  "DECISIONS.md",
+  "RECORD_MODEL.md",
+  "EXPORTS.md",
+  "data/spec/requirements.json",
+  "data/spec/conformance-checks.json",
+  "data/spec/scope-exclusions.json",
+  "data/examples",
+  "data/records",
+  "data/exports",
+]
+
+# === Scope ===
+
+[scope]
+includes = [
+  "civic influence accountable records",
+  "organization records",
+  "person records",
+  "source-backed relationship records",
+  "funding and contribution records",
+  "lobbying and public filing references",
+  "entity resolution records",
+  "claim and interpretation records",
+  "human-readable civic influence reports",
+]
+
+excludes = [
+  "claims of causation",
+  "claims of endorsement",
+  "claims of control",
+  "claims of ideological agreement",
+  "claims that employment implies corporate action",
+  "claims that funding implies authorship",
+  "claims that association implies coordination",
+  "analytics, inference, recommendation, or decision logic",
+]
+
+# === Validation ===
+
+[validation]
+entrypoint = "uv run civic-influence-record-validate"
+export_check_entrypoint = "uv run civic-influence-record-export --check"
+reference_entrypoint = "uv run civic-influence-record-ref-validate"
+strict_entrypoint = "uv run civic-influence-record-validate --strict"
+tag_entrypoint = "uv run python -m se_manifest_schema validate --strict --require-tag"
+
+# === Behavior / governance ===
+
+[naming]
+pattern = "civic-influence-record"
+
+[governance]
+authority = "structural-explainability"
+
+# === External references ===
+
+[citation]
+cff = "CITATION.cff"
+preferred = "software"
+
+[traceability]
+identifier_map = "structural-explainability/civic-influence-record/IDENTIFIERS.md"

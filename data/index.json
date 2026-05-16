@@ -1,0 +1,65 @@
+{
+  "schema": "civic-influence-record-data-index-1",
+  "repo": {
+    "id": "CIR",
+    "name": "Civic Influence Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "description": "Index of machine-readable Civic Influence Record data artifacts.",
+  "artifacts": [
+    {
+      "id": "cir-requirements",
+      "path": "data/spec/requirements.json",
+      "kind": "requirements",
+      "generated": true,
+      "source": [
+        "SPEC.md",
+        "IDENTIFIERS.md"
+      ],
+      "description": "Generated machine-readable Civic Influence Record requirements."
+    },
+    {
+      "id": "cir-conformance-checks",
+      "path": "data/spec/conformance-checks.json",
+      "kind": "conformance-checks",
+      "generated": true,
+      "source": [
+        "CONFORMANCE.md",
+        "IDENTIFIERS.md"
+      ],
+      "description": "Generated machine-readable Civic Influence Record conformance checks."
+    },
+    {
+      "id": "cir-scope-exclusions",
+      "path": "data/spec/scope-exclusions.json",
+      "kind": "scope-exclusions",
+      "generated": true,
+      "source": [
+        "SPEC.md"
+      ],
+      "description": "Generated machine-readable Civic Influence Record scope exclusions."
+    },
+    {
+      "id": "cir-example-records",
+      "path": "data/examples/example-civic-influence-records.json",
+      "kind": "example-records",
+      "generated": false,
+      "source": [
+        "RECORD_MODEL.md"
+      ],
+      "description": "Example civic influence records for model inspection and verifier development."
+    },
+    {
+      "id": "cir-record-bundle",
+      "path": "data/exports/civic-influence-record-bundle.json",
+      "kind": "export-bundle",
+      "generated": false,
+      "source": [
+        "EXPORTS.md",
+        "RECORD_MODEL.md"
+      ],
+      "description": "Example verification-ready Civic Influence Record export bundle."
+    }
+  ]
+}

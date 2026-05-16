@@ -1,0 +1,106 @@
+{
+  "schema": "se-boundary-requirements-1",
+  "spec": {
+    "id": "CIR",
+    "name": "Civic Influence Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "requirements": [
+    {
+      "id": "CIR.AFFILIATION.RECORD",
+      "note": "Defines affiliation records for declared associations among persons and",
+      "normative_source": "SPEC.md#CIR.AFFILIATION.RECORD"
+    },
+    {
+      "id": "CIR.CLAIM.RECORD",
+      "note": "Defines claim records for assertions about civic influence structures.",
+      "normative_source": "SPEC.md#CIR.CLAIM.RECORD"
+    },
+    {
+      "id": "CIR.COLLAPSE.PROHIBITED",
+      "note": "Prohibits civic influence category collapses such as association-to-endorsement",
+      "normative_source": "SPEC.md#CIR.COLLAPSE.PROHIBITED"
+    },
+    {
+      "id": "CIR.CONFORMANCE.AR.REQUIRED",
+      "note": "Requires conformance with Accountable Record.",
+      "normative_source": "SPEC.md#CIR.CONFORMANCE.AR.REQUIRED"
+    },
+    {
+      "id": "CIR.CONFORMANCE.SE.REQUIRED",
+      "note": "Requires conformance with Structural Explainability.",
+      "normative_source": "SPEC.md#CIR.CONFORMANCE.SE.REQUIRED"
+    },
+    {
+      "id": "CIR.CONTRIBUTION.RECORD",
+      "note": "Defines contribution records for source-backed funding flows.",
+      "normative_source": "SPEC.md#CIR.CONTRIBUTION.RECORD"
+    },
+    {
+      "id": "CIR.DEFINITION.CORE",
+      "note": "Defines CIR as the civic influence domain profile of AR.",
+      "normative_source": "SPEC.md#CIR.DEFINITION.CORE"
+    },
+    {
+      "id": "CIR.ENTITY_RESOLUTION.RECORD",
+      "note": "Defines entity resolution records for source-backed identity assertions across",
+      "normative_source": "SPEC.md#CIR.ENTITY_RESOLUTION.RECORD"
+    },
+    {
+      "id": "CIR.INTERPRETATION.RECORD",
+      "note": "Supports civic influence interpretation records for declared interpretive",
+      "normative_source": "SPEC.md#CIR.INTERPRETATION.RECORD"
+    },
+    {
+      "id": "CIR.LOBBYING.RECORD",
+      "note": "Defines lobbying records for source-backed lobbying filings or disclosures.",
+      "normative_source": "SPEC.md#CIR.LOBBYING.RECORD"
+    },
+    {
+      "id": "CIR.ORGANIZATION.RECORD",
+      "note": "Defines organization records for organizational entities.",
+      "normative_source": "SPEC.md#CIR.ORGANIZATION.RECORD"
+    },
+    {
+      "id": "CIR.PERSON.RECORD",
+      "note": "Defines person records for individual persons.",
+      "normative_source": "SPEC.md#CIR.PERSON.RECORD"
+    },
+    {
+      "id": "CIR.POLICY_DOCUMENT.REFERENCE",
+      "note": "Defines policy document references used in civic influence records.",
+      "normative_source": "SPEC.md#CIR.POLICY_DOCUMENT.REFERENCE"
+    },
+    {
+      "id": "CIR.PROVENANCE.SOURCE",
+      "note": "Supports source-filing provenance records tracing source filings to derived",
+      "normative_source": "SPEC.md#CIR.PROVENANCE.SOURCE"
+    },
+    {
+      "id": "CIR.RELATIONSHIP.RECORD",
+      "note": "Defines source-backed relationship records among civic entities.",
+      "normative_source": "SPEC.md#CIR.RELATIONSHIP.RECORD"
+    },
+    {
+      "id": "CIR.ROLE.RECORD",
+      "note": "Defines role records for roles held by persons within organizations or other",
+      "normative_source": "SPEC.md#CIR.ROLE.RECORD"
+    },
+    {
+      "id": "CIR.SCOPE.EXCLUSIONS",
+      "note": "Defines what CIR explicitly does not specify.",
+      "normative_source": "SPEC.md#CIR.SCOPE.EXCLUSIONS"
+    },
+    {
+      "id": "CIR.TIME_BOUND.REFERENCE",
+      "note": "Defines time-bound references for relationship, role, contribution, and",
+      "normative_source": "SPEC.md#CIR.TIME_BOUND.REFERENCE"
+    },
+    {
+      "id": "CIR.VERSIONING",
+      "note": "Defines CIR versioning requirements.",
+      "normative_source": "SPEC.md#CIR.VERSIONING"
+    }
+  ]
+}

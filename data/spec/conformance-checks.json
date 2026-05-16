@@ -1,0 +1,277 @@
+{
+  "schema": "se-boundary-conformance-checks-1",
+  "spec": {
+    "id": "CIR",
+    "name": "Civic Influence Record",
+    "version": "0.1.0",
+    "status": "working-draft"
+  },
+  "checks": [
+    {
+      "id": "CIR.AFFILIATION.RECORD",
+      "checks": [
+        "[ ] Affiliation records identify the affiliated entities.",
+        "[ ] Affiliation records identify the affiliation type as a declared type.",
+        "[ ] Affiliation records conform to CIR.RELATIONSHIP.RECORD.",
+        "[ ] Affiliation records do not imply endorsement.",
+        "[ ] Affiliation records do not imply ideological agreement.",
+        "[ ] Affiliation records do not imply coordination, control, or shared intent."
+      ],
+      "failure_conditions": [
+        "affiliation is treated as endorsement, ideological agreement,"
+      ]
+    },
+    {
+      "id": "CIR.CLAIM.RECORD",
+      "checks": [
+        "[ ] Claim records conform to AR.CLAIM.RECORD.",
+        "[ ] Claim records reference the records the claim is about.",
+        "[ ] Claim records identify the asserting actor.",
+        "[ ] Claim records remain distinguishable from relationship records.",
+        "[ ] Claim records do not assert causation, endorsement, control, or"
+      ],
+      "failure_conditions": [
+        "a claim is treated as a source-backed relationship or as"
+      ]
+    },
+    {
+      "id": "CIR.COLLAPSE.PROHIBITED",
+      "checks": [
+        "[ ] Association remains distinct from endorsement.",
+        "[ ] Employment remains distinct from corporate action.",
+        "[ ] Funding remains distinct from authorship.",
+        "[ ] Grants remain distinct from control.",
+        "[ ] Lobbying remains distinct from policy outcome.",
+        "[ ] Shared personnel remains distinct from unified intent.",
+        "[ ] Network proximity remains distinct from causation.",
+        "[ ] Entity resolution remains distinct from ideological agreement.",
+        "[ ] Relationship remains distinct from inference.",
+        "[ ] Source-backed record remains distinct from interpretation.",
+        "[ ] Source provenance remains distinct from source truth.",
+        "[ ] Source provenance remains distinct from endorsement.",
+        "[ ] Interpretation remains distinct from source-backed relationship."
+      ],
+      "failure_conditions": [
+        "a civic influence record collapses any prohibited civic influence category."
+      ]
+    },
+    {
+      "id": "CIR.CONFORMANCE.AR.REQUIRED",
+      "checks": [
+        "[ ] The artifact declares conformance with AR.",
+        "[ ] The artifact preserves all AR constraints.",
+        "[ ] The artifact does not weaken, override, or reinterpret AR."
+      ],
+      "failure_conditions": [
+        "CIR conformance is asserted while weakening, overriding, or reinterpreting AR."
+      ]
+    },
+    {
+      "id": "CIR.CONFORMANCE.SE.REQUIRED",
+      "checks": [
+        "[ ] The artifact declares conformance with SE.",
+        "[ ] The artifact preserves SE neutrality constraints.",
+        "[ ] The artifact does not weaken, override, or reinterpret SE."
+      ],
+      "failure_conditions": [
+        "CIR conformance is asserted while weakening, overriding, or reinterpreting SE neutrality."
+      ]
+    },
+    {
+      "id": "CIR.CONTRIBUTION.RECORD",
+      "checks": [
+        "[ ] Contribution records identify contributor and recipient entities.",
+        "[ ] Contribution records identify amount and time where available.",
+        "[ ] Contribution records reference the source filing.",
+        "[ ] Contribution records remain distinguishable from claim records and interpretation records.",
+        "[ ] Contribution records do not imply influence, endorsement, control, or expectation of outcome."
+      ],
+      "failure_conditions": [
+        "contribution is treated as influence, endorsement, control, or expected outcome."
+      ]
+    },
+    {
+      "id": "CIR.DEFINITION.CORE",
+      "checks": [
+        "[ ] The artifact treats CIR as a domain profile of AR.",
+        "[ ] The artifact limits CIR to source-backed civic influence records and prohibited collapses.",
+        "[ ] The artifact does not define causation, endorsement, control, ideological agreement,"
+      ],
+      "failure_conditions": [
+        "CIR is treated as a causation model, endorsement model, control model,"
+      ]
+    },
+    {
+      "id": "CIR.ENTITY_RESOLUTION.RECORD",
+      "checks": [
+        "[ ] Entity resolution records identify the source-backed references being resolved.",
+        "[ ] Entity resolution records identify evidence supporting the resolution.",
+        "[ ] Entity resolution records identify the asserting actor.",
+        "[ ] Entity resolution records remain distinguishable from source-backed references.",
+        "[ ] Entity resolution records do not modify source-backed references.",
+        "[ ] Entity resolution records do not imply ideological agreement, coordination, or shared intent.",
+        "[ ] Entity resolution records are revisable as new evidence becomes available."
+      ],
+      "failure_conditions": [
+        "entity resolution is treated as source-record merger, ideological agreement,"
+      ]
+    },
+    {
+      "id": "CIR.INTERPRETATION.RECORD",
+      "checks": [
+        "[ ] CIR interpretation records conform to AR.INTERPRETATION.RECORD when used.",
+        "[ ] CIR interpretation records identify the interpretive inference type as a declared type.",
+        "[ ] CIR interpretation records identify the records on which the interpretation depends.",
+        "[ ] CIR interpretation records identify the asserting actor or framework.",
+        "[ ] CIR interpretation records remain distinguishable from relationship records and claim records.",
+        "[ ] CIR interpretation records do not modify source-backed records.",
+        "[ ] CIR interpretation records do not convert an interpretation into a source-backed relationship.",
+        "[ ] CIR interpretation records do not assert correctness, authority, legitimacy, obligation, or enforcement."
+      ],
+      "failure_conditions": [
+        "civic influence interpretation is treated as source-backed relationship,"
+      ]
+    },
+    {
+      "id": "CIR.LOBBYING.RECORD",
+      "checks": [
+        "[ ] Lobbying records reference the source filing.",
+        "[ ] Lobbying records identify the lobbying entity and lobbied entity where declared.",
+        "[ ] Lobbying records identify time period and subject matter where available.",
+        "[ ] Lobbying records remain distinguishable from claim records and interpretation records.",
+        "[ ] Lobbying records do not imply policy outcome, success, or causal influence."
+      ],
+      "failure_conditions": [
+        "lobbying is treated as policy success, outcome, causation, or influence proof."
+      ]
+    },
+    {
+      "id": "CIR.ORGANIZATION.RECORD",
+      "checks": [
+        "[ ] Organization records use stable identifiers.",
+        "[ ] Organization records conform to AR.IDENTITY.RECORD.",
+        "[ ] Organization records identify organization type where declared.",
+        "[ ] Organization records remain distinguishable from person records and role records.",
+        "[ ] Organization records do not assert ideological alignment, intent, or"
+      ],
+      "failure_conditions": [
+        "an organization record is treated as ideological alignment, intent,"
+      ]
+    },
+    {
+      "id": "CIR.PERSON.RECORD",
+      "checks": [
+        "[ ] Person records use stable identifiers.",
+        "[ ] Person records conform to AR.IDENTITY.RECORD.",
+        "[ ] Person records remain distinguishable from organization records and role records.",
+        "[ ] Person records do not assert ideological alignment, intent, or",
+        "[ ] Person records support privacy and identity disclosure constraints declared"
+      ],
+      "failure_conditions": [
+        "a person record is treated as ideological alignment, intent,"
+      ]
+    },
+    {
+      "id": "CIR.POLICY_DOCUMENT.REFERENCE",
+      "checks": [
+        "[ ] Policy document references use stable identifiers.",
+        "[ ] Policy document references are referenceable from claim, lobbying, and relationship records.",
+        "[ ] Policy document references remain distinguishable from interpretations of the referenced document.",
+        "[ ] Policy document references are not modified to reflect interpretation of the referenced document."
+      ],
+      "failure_conditions": [
+        "policy document references are treated as interpretations or modified by interpretation."
+      ]
+    },
+    {
+      "id": "CIR.PROVENANCE.SOURCE",
+      "checks": [
+        "[ ] Source-filing provenance records conform to AR.PROVENANCE when used.",
+        "[ ] Source-filing provenance records identify the originating source filing.",
+        "[ ] Source-filing provenance records identify the records derived from the source filing.",
+        "[ ] Source-filing provenance records identify derivation methods or processes where known.",
+        "[ ] Source-filing provenance records remain distinguishable from the source filing and derived records.",
+        "[ ] Source-filing provenance records do not modify the source filing or derived records.",
+        "[ ] Source-filing provenance records do not assert correctness, completeness, authority,"
+      ],
+      "failure_conditions": [
+        "source provenance is treated as source truth, endorsement, control, causation,"
+      ]
+    },
+    {
+      "id": "CIR.RELATIONSHIP.RECORD",
+      "checks": [
+        "[ ] Relationship records identify related entities.",
+        "[ ] Relationship records identify relationship type as a declared type.",
+        "[ ] Relationship records reference the source supporting the relationship.",
+        "[ ] Relationship records identify time bounds where available.",
+        "[ ] Relationship records remain distinguishable from inference records, claim records, and",
+        "[ ] Relationship records do not imply causation, endorsement, control,"
+      ],
+      "failure_conditions": [
+        "relationship is treated as inference, causation, endorsement, control,"
+      ]
+    },
+    {
+      "id": "CIR.ROLE.RECORD",
+      "checks": [
+        "[ ] Role records identify the person.",
+        "[ ] Role records identify the role-holding entity.",
+        "[ ] Role records identify the role type.",
+        "[ ] Role records identify the time period where available.",
+        "[ ] Role records reference the source supporting the role.",
+        "[ ] Role records remain distinguishable from person records and organization records.",
+        "[ ] Role records do not imply that the person endorses, controls, or shares intent"
+      ],
+      "failure_conditions": [
+        "role is treated as endorsement, control, shared intent, person identity, or"
+      ]
+    },
+    {
+      "id": "CIR.SCOPE.EXCLUSIONS",
+      "checks": [
+        "[ ] causation",
+        "[ ] endorsement",
+        "[ ] control",
+        "[ ] ideological agreement",
+        "[ ] wrongdoing",
+        "[ ] public influence scoring",
+        "[ ] legal or ethical judgment",
+        "[ ] recommendation or decision logic",
+        "[ ] source data hosting",
+        "[ ] automatic entity truth",
+        "[ ] source truth certification",
+        "[ ] endorsement certification",
+        "[ ] control certification",
+        "[ ] replacements for source databases or public filing systems"
+      ],
+      "failure_conditions": [
+        "Presence of any excluded concern as a CIR-defined construct constitutes non-conformance."
+      ]
+    },
+    {
+      "id": "CIR.TIME_BOUND.REFERENCE",
+      "checks": [
+        "[ ] Time bound references identify start time where available.",
+        "[ ] Time bound references identify end time where available.",
+        "[ ] Time bound references distinguish unknown bounds from open-ended bounds.",
+        "[ ] Time bound references do not assert that time bounds imply causation or coordination."
+      ],
+      "failure_conditions": [
+        "time bounds are treated as causation, coordination, or influence chains."
+      ]
+    },
+    {
+      "id": "CIR.VERSIONING",
+      "checks": [
+        "[ ] CIR versioning conforms to AR.VERSIONING.",
+        "[ ] CIR identifies the CIR version.",
+        "[ ] CIR identifies the underlying AR version.",
+        "[ ] CIR does not allow silent or implicit change."
+      ],
+      "failure_conditions": [
+        "CIR or AR versioning is missing, implicit, unstable, or silently changed."
+      ]
+    }
+  ]
+}
