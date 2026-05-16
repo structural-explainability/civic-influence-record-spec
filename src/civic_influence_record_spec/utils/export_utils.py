@@ -4,16 +4,16 @@ from dataclasses import asdict, dataclass
 import json
 from pathlib import Path
 
-from civic_influence_record.spec_config import SpecConfig
-from civic_influence_record.utils.extractor_utils import (
+from civic_influence_record_spec.spec_config import SpecConfig
+from civic_influence_record_spec.utils.extractor_utils import (
     Requirement,
     assert_alphabetical_order,
     assert_exact_identifier_coverage,
     extract_heading_identifiers,
     extract_identifier_notes,
 )
-from civic_influence_record.utils.load_utils import load_text
-from civic_influence_record.utils.path_utils import data_spec_path, repo_root
+from civic_influence_record_spec.utils.load_utils import load_text
+from civic_influence_record_spec.utils.path_utils import data_spec_path, repo_root
 
 
 @dataclass(frozen=True)

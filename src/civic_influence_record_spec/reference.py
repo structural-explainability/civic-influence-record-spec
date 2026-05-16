@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from civic_influence_record.utils.ref_utils import (
+from civic_influence_record_spec.utils.ref_utils import (
     SECTION_LEAN_KINDS,
     LeanDecl,
     extract_decls,

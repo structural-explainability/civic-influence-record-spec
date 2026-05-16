@@ -1,9 +1,9 @@
 """Tests for canonical requirement identifiers."""
 
-from civic_influence_record.spec_config import SPEC_CONFIG
-from civic_influence_record.utils.extractor_utils import extract_identifier_notes
-from civic_influence_record.utils.load_utils import load_text
-from civic_influence_record.utils.path_utils import repo_root
+from civic_influence_record_spec.spec_config import SPEC_CONFIG
+from civic_influence_record_spec.utils.extractor_utils import extract_identifier_notes
+from civic_influence_record_spec.utils.load_utils import load_text
+from civic_influence_record_spec.utils.path_utils import repo_root
 
 
 def test_each_identifier_has_one_note() -> None:

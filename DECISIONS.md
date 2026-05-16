@@ -4,7 +4,7 @@ This document records founding decisions.
 
 ## Decision 1: Define Civic Influence Record as an Accountable Record system
 
-Decision: `civic-influence-record` implements the Accountable Record contract
+Decision: `civic-influence-record-spec` implements the Accountable Record contract
 for source-backed civic influence structures.
 
 Rationale: Civic influence data often spans public filings, nonprofit records,
@@ -72,7 +72,7 @@ Consequences:
 ## Decision 5: Keep the implementation verifiable
 
 Decision: The record model and exports are designed for verification by
-`se-verification-civic-influence-record`.
+`se-verification-civic-influence-record-spec`.
 
 Rationale: The purpose of the system is not only to store civic influence
 records, but to make the record discipline externally checkable.

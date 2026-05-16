@@ -1,6 +1,6 @@
 # ============================================================
 # SE_MANIFEST.toml (Repository Declaration)
-# civic-influence-record
+# civic-influence-record-spec
 # ============================================================
 
 schema = "se-manifest-schema"
@@ -12,10 +12,10 @@ schema_url = "https://github.com/structural-explainability/se-manifest-schema/bl
 purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
 
 [repo]
-name = "civic-influence-record"
+name = "civic-influence-record-spec"
 org = "structural-explainability"
 class = "record_system"
-kind = "civic-influence-record"
+kind = "civic-influence-record-spec"
 status = "active"
 since = "2026"
 summary = "Provides a civic influence accountable record system for source-backed relationships among people, organizations, money flows, roles, affiliations, policy documents, and claims."
@@ -31,7 +31,7 @@ required = [
   "structural-explainability/accountable-record@main",
 ]
 optional = [
-  "structural-explainability/se-verification-civic-influence-record@main",
+  "structural-explainability/se-verification-civic-influence-record-spec@main",
 ]
 
 # === Provided artifacts ===
@@ -82,16 +82,16 @@ excludes = [
 # === Validation ===
 
 [validation]
-entrypoint = "uv run civic-influence-record-validate"
-export_check_entrypoint = "uv run civic-influence-record-export --check"
-reference_entrypoint = "uv run civic-influence-record-ref-validate"
-strict_entrypoint = "uv run civic-influence-record-validate --strict"
+entrypoint = "uv run civic-influence-record-spec-validate"
+export_check_entrypoint = "uv run civic-influence-record-spec-export --check"
+reference_entrypoint = "uv run civic-influence-record-spec-ref-validate"
+strict_entrypoint = "uv run civic-influence-record-spec-validate --strict"
 tag_entrypoint = "uv run python -m se_manifest_schema validate --strict --require-tag"
 
 # === Behavior / governance ===
 
 [naming]
-pattern = "civic-influence-record"
+pattern = "civic-influence-record-spec"
 
 [governance]
 authority = "structural-explainability"
@@ -103,4 +103,4 @@ cff = "CITATION.cff"
 preferred = "software"
 
 [traceability]
-identifier_map = "structural-explainability/civic-influence-record/IDENTIFIERS.md"
+identifier_map = "structural-explainability/civic-influence-record-spec/IDENTIFIERS.md"

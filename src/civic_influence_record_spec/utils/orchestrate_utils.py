@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from civic_influence_record.export import export_all
-from civic_influence_record.validate import validate_all
+from civic_influence_record_spec.export import export_all
+from civic_influence_record_spec.validate import validate_all
 
 
 def run_ref_export(

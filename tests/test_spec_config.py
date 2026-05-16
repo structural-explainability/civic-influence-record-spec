@@ -1,6 +1,6 @@
 """Tests for specification configuration."""
 
-from civic_influence_record.spec_config import SPEC_CONFIG
+from civic_influence_record_spec.spec_config import SPEC_CONFIG
 
 
 def test_spec_config_has_export_schemas() -> None:

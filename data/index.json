@@ -1,5 +1,5 @@
 {
-  "schema": "civic-influence-record-data-index-1",
+  "schema": "civic-influence-record-spec-data-index-1",
   "repo": {
     "id": "CIR",
     "name": "Civic Influence Record",
@@ -42,7 +42,7 @@
     },
     {
       "id": "cir-example-records",
-      "path": "data/examples/example-civic-influence-records.json",
+      "path": "data/examples/example-civic-influence-record-specs.json",
       "kind": "example-records",
       "generated": false,
       "source": [
@@ -52,7 +52,7 @@
     },
     {
       "id": "cir-record-bundle",
-      "path": "data/exports/civic-influence-record-bundle.json",
+      "path": "data/exports/civic-influence-record-spec-bundle.json",
       "kind": "export-bundle",
       "generated": false,
       "source": [

@@ -1,12 +1,12 @@
-# civic-influence-record (CIR)
+# civic-influence-record-spec (CIR)
 
-[![Repo](https://img.shields.io/badge/repo-GitHub-black?logo=github)](https://github.com/structural-explainability/civic-influence-record)
+[![Repo](https://img.shields.io/badge/repo-GitHub-black?logo=github)](https://github.com/structural-explainability/civic-influence-record-spec)
 [![Tooling](https://img.shields.io/badge/python-3.15%2B-blue?logo=python)](./pyproject.toml)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](./LICENSE)
 
-[![CI](https://github.com/structural-explainability/civic-influence-record/actions/workflows/ci-python.yml/badge.svg?branch=main)](https://github.com/structural-explainability/civic-influence-record/actions/workflows/ci-python.yml)
-[![Links](https://github.com/structural-explainability/civic-influence-record/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/civic-influence-record/actions/workflows/links.yml)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/structural-explainability/civic-influence-record/security)
+[![CI](https://github.com/structural-explainability/civic-influence-record-spec/actions/workflows/ci-python.yml/badge.svg?branch=main)](https://github.com/structural-explainability/civic-influence-record-spec/actions/workflows/ci-python.yml)
+[![Links](https://github.com/structural-explainability/civic-influence-record-spec/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/civic-influence-record-spec/actions/workflows/links.yml)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/structural-explainability/civic-influence-record-spec/security)
 
 > Civic influence accountable record system for source-backed relationships, organizations,
 > people, funding, lobbying, roles, affiliations, documents, and claims.
@@ -135,7 +135,7 @@ This system does NOT define:
   nonprofit, corporate, government spending, and public filing records.
 - Civic Influence Record does not replace those sources.
 - Civic Influence Record produces export bundles that may be checked by
-  `se-verification-civic-influence-record`.
+  `se-verification-civic-influence-record-spec`.
 - SE verification checks whether Civic Influence Record preserves SE-relevant
   distinctions without determining causation, endorsement, control, or judgment.
 
@@ -177,9 +177,9 @@ inspectable across disagreement, reinterpretation, and time.
 Open a machine terminal where you want the project:
 
 ```shell
-git clone https://github.com/structural-explainability/civic-influence-record
+git clone https://github.com/structural-explainability/civic-influence-record-spec
 
-cd civic-influence-record
+cd civic-influence-record-spec
 code .
 ```
 
@@ -200,11 +200,19 @@ uvx pre-commit run --all-files
 git add -A
 uvx pre-commit run --all-files
 
-# generate/check registry artifacts
+# validate Markdown sources and generated specification artifacts
 uv run se-validate
+
+# generate machine-readable specification artifacts under data/spec/
 uv run se-ref-export
+
+# check that generated data/spec/ artifacts are current
 uv run se-ref-export --check
+
+# validate reference artifacts and registry consistency
 uv run se-ref-validate
+
+# run strict validation, including all standard source and export checks
 uv run se-validate --strict
 
 # do chores

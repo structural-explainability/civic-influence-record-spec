@@ -26,7 +26,7 @@ wheels = [
 ]
 
 [[package]]
-name = "civic-influence-record"
+name = "civic-influence-record-spec"
 source = { editable = "." }
 dependencies = [
     { name = "se-manifest-schema" },

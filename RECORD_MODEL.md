@@ -2,7 +2,7 @@
 
 Status: Working Draft
 
-This document defines the working record model for `civic-influence-record`.
+This document defines the working record model for `civic-influence-record-spec`.
 
 Civic Influence Record (CIR) is an Accountable Record domain profile for
 source-backed civic influence structures.
@@ -518,7 +518,7 @@ A civic influence record system should be able to export a bundle containing:
 - version declarations for CIR and AR
 
 The exported bundle should be suitable for checking by
-`se-verification-civic-influence-record`.
+`se-verification-civic-influence-record-spec`.
 
 ## Clarifying Statement
 

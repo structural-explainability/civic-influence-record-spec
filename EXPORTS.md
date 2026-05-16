@@ -2,7 +2,7 @@
 
 Status: Working Draft
 
-This document describes the export structure produced by `civic-influence-record`
+This document describes the export structure produced by `civic-influence-record-spec`
 for validation, inspection, and SE verification.
 
 Civic Influence Record exports are designed to make civic influence records
@@ -58,11 +58,11 @@ data/
     conformance-checks.json
     scope-exclusions.json
   examples/
-    example-civic-influence-records.json
+    example-civic-influence-record-specs.json
   records/
     example-records.json
   exports/
-    civic-influence-record-bundle.json
+    civic-influence-record-spec-bundle.json
 ```
 
 ## Export Bundle
@@ -72,18 +72,18 @@ The primary export artifact is a civic influence record bundle.
 Suggested filename:
 
 ```text
-data/exports/civic-influence-record-bundle.json
+data/exports/civic-influence-record-spec-bundle.json
 ```
 
 Suggested top-level shape:
 
 ```json
 {
-  "schema": "civic-influence-record-bundle-1",
+  "schema": "civic-influence-record-spec-bundle-1",
   "bundle_id": "cir-bundle:example",
   "generated_at": "2026-05-16",
   "versions": {
-    "civic_influence_record": "0.1.0",
+    "civic_influence_record_spec": "0.1.0",
     "accountable_record": "0.1.0"
   },
   "conformance": {
@@ -292,7 +292,7 @@ An export is valid when:
 The export bundle is the handoff artifact for:
 
 ```text
-se-verification-civic-influence-record
+se-verification-civic-influence-record-spec
 ```
 
 The verifier checks whether the exported bundle preserves the distinctions

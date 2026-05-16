@@ -1,14 +1,14 @@
 """cli.py - Public command-line entry points."""
 
-from civic_influence_record.commands.manifest import (
+from civic_influence_record_spec.commands.manifest import (
     sync_main,
 )
-from civic_influence_record.commands.reference import (
+from civic_influence_record_spec.commands.reference import (
     ref_export_main,
     ref_validate_main,
 )
-from civic_influence_record.commands.root import main
-from civic_influence_record.commands.validate import validate_main
+from civic_influence_record_spec.commands.root import main
+from civic_influence_record_spec.commands.validate import validate_main
 
 __all__ = [
     "main",

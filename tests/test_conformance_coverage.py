@@ -1,14 +1,14 @@
 """Tests for CONFORMANCE.md requirement coverage."""
 
-from civic_influence_record.spec_config import SPEC_CONFIG
-from civic_influence_record.utils.extractor_utils import (
+from civic_influence_record_spec.spec_config import SPEC_CONFIG
+from civic_influence_record_spec.utils.extractor_utils import (
     assert_alphabetical_order,
     assert_exact_identifier_coverage,
     extract_heading_identifiers,
     extract_identifier_notes,
 )
-from civic_influence_record.utils.load_utils import load_text
-from civic_influence_record.utils.path_utils import repo_root
+from civic_influence_record_spec.utils.load_utils import load_text
+from civic_influence_record_spec.utils.path_utils import repo_root
 
 
 def test_conformance_covers_all_canonical_identifiers() -> None:

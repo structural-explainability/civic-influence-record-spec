@@ -3,12 +3,12 @@
 import argparse
 from pathlib import Path
 
-from civic_influence_record.utils.load_utils import load_fallback_version
-from civic_influence_record.utils.orchestrate_utils import (
+from civic_influence_record_spec.utils.load_utils import load_fallback_version
+from civic_influence_record_spec.utils.orchestrate_utils import (
     run_ref_export,
     run_ref_validate,
 )
-from civic_influence_record.utils.ref_utils import find_repo_root
+from civic_influence_record_spec.utils.ref_utils import find_repo_root
 
 
 def ref_export_main(argv: list[str] | None = None) -> int:
